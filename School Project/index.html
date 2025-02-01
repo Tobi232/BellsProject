@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d2a6add442.js" crossorigin="anonymous"></script>
+    <title>Bells University Market shop</title>
+</head>
+<body>
+    <header>
+        <h1>Bells Uni-mart</h1>
+        <div class="container">
+            <input type="text" class="search-bar" placeholder="Search for Products" />
+            <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <nav>
+            <div class="menu-icon" onClick="toggleMenu()">
+                <i class="fa-solid fa-bars" id="menu-open"></i>
+            </div>
+            <ul id="sideMenu">
+                <i class="fa-solid fa-xmark" id="menu-close" onClick="toggleMenu()"></i>
+                <li><a href="#">Help</a></li>
+                <li><a href="signup.html">Signup</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="sign"> 
+            <h1>Search Market shop</h1>
+            <h2>Easy, convenient and commission free transactions</h2>
+            <a href="signup.html">sign up</a>
+        </div>
+        <img src="my images/cart.jpg" alt="shopping cart image" />
+    </section>
+
+    <div class="Categories">
+        <h2>Categories</h2>
+        <ul>
+            <li><i class="fa-solid fa-tv"></i><a href="https://www.jumia.com.ng/">Electronics</a></li>
+            <li><i class="fa-solid fa-shirt"></i><a href="https://www.jumia.com.ng/category-fashion-by-jumia/">Clothing</a></li>
+            <li><i class="fa-solid fa-book"></i><a href="https://www.jumia.com.ng/catalog/?q=books">Books</a></li>
+            <li><i class="fa-regular fa-face-smile"></i><a href="https://www.jumia.com.ng/health-beauty/?q=beauty#catalog-listing">Beauty</a></li>
+            <li><i class="fa-solid fa-baseball"></i><a href="https://www.jumia.com.ng/catalog/?q=sports+shoes+for+men"> Sports & Outdoors</a></li>
+            <li><i class="fa-solid fa-bowl-food"></i><a href="https://glovoapp.com/ng/en/lagos/food_1/jollof_35649/">Food & Drink</a></li>
+            <li><i class="fa-solid fa-gamepad"></i><a href="https://www.jumia.com.ng/catalog/?q=games">Games</a></li>
+            <li><i class="fa-solid fa-bell-concierge"></i><a href="">Services</a></li>
+        </ul>
+    </div>
+
+    <div class="things">
+        <div class="line">
+            <span><h2>PRODUCTS</h2></span>
+        </div>
+        <div class="products">
+            <div class="product-card">
+                <img src="my images/dr shoes.jpeg" alt="Product Image" />
+                <h3>Dr Martens Platform</h3>
+                <p>₦60,000</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="my images/slippers.jpg" alt="Product Image" />
+                <h3>Casual</h3>
+                <p>₦35,000</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="my images/lace iup.jpg" alt="Product Image" />
+                <h3>Sneaker</h3>
+                <p>₦40,000</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="my images/Givenchy.webp" alt="Product Image" />
+                <h3>Givenchy</h3>
+                <p>₦75,000</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="my images/images.jpeg" alt="Product Image" />
+                <h3>Nike Slide</h3>
+                <p>₦33,000</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="my images/AIR+FORCE.png" alt="Product Image" />
+                <h3>Air Force 1</h3>
+                <p>₦100,000</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="footer-container">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/bellstechota"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/bellstechofficial/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2025. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const sideMenu = document.getElementById('sideMenu');
+            const menuCloseIcon = document.getElementById('menu-close');
+            
+            // Check if the sidemenu is currently visible
+            if (sideMenu.style.right === '0px') {
+                sideMenu.style.right = '-250px'; // Hide the menu
+            } else {
+                sideMenu.style.right = '0px'; // Show the menu
+            }
+        }
+    </script>
+</body>
+</html>

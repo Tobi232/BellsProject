@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="js.js">
+    <script src="https://kit.fontawesome.com/d2a6add442.js" crossorigin="anonymous"></script>
+    <title>Signup - Bells University Market Shop</title>
+</head>
+<body>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header{
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1{
+            margin: 0;
+        }
+        nav a{
+            color: #fff;
+            text-decoration: none;
+            margin: 15px;
+        }
+        nav a:hover{
+            text-decoration: underline;
+        }
+
+        .signup-section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 20px;
+        }
+        .signup-container{
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        .signup-container h1{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group{
+            margin-bottom: 15px;
+        }
+        .form-group label{
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .form-group input{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .form-group input:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+        .form-group button{
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .form-group button:hover{
+            background-color: #0056b3;
+        }
+
+        
+.footer-container{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+
+}
+.social-icons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 50%;
+}
+.social-icons a i{
+    font-size: 2em;
+    color: #000;
+    opacity: 0.9;
+}
+.social-icons a:hover{
+    background: #111;
+    transition: 0.5s;
+}
+.social-icons a:hover i{
+    color: #111;
+    transition: 0.5s;
+} 
+.footer-nav ul{
+    display: flex;
+    justify-content: center;
+}
+.footer-nav ul li{
+    margin: 20px;
+}
+.footer-nav ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footer-nav ul li a:hover{
+    color: #218838;
+    transition: 0.5s;
+}
+.footer-bottom{
+    padding: 20px;
+    text-align: center;
+}
+.footer-bottom p{
+    color: #000;
+}
+
+    </style>
+
+
+    <header>
+        <h1>Bells Marketshop</h1>
+        <nav>
+            <a href="#">Help</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+
+    <section class="signup-section">
+        <div class="signup-container">
+            <h1>Create Your Account</h1>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="signup-button">Sign Up</button>
+                </div>
+            </form>
+            <p>Already have an account? <a href="#">Login here</a></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/bellstechota"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/bellstechofficial/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2025. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+    <SCript>
+        function validateForm(){
+            const fullname = document.getElementById('fullname').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value.trim();
+            const confirmPassword = document.getElementById('confirm-password').value.trim();
+            const passwordError = document.getElementById('password-error');
+
+            passwordError.style.display = 'none';
+
+            if(!fullname || !email || !password || !confirmPassword){
+                alert('Please fill all fields.');
+                return false;
+            }
+
+            if(password  !== confirmPassword){
+                passwordError.style.display = 'block';
+                return false;
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+            alert('Please enter a valid email address.');
+            return false;
+            }
+
+            alert('Form submitted successfully!');
+            return true;
+
+            document.querySelector('form').addEventListener('submit', function (event) {
+                if (!validateForm()) {
+                    event.preventDefault(); // Prevent form submission if validation fails
+    }
+});
+        }
+    </SCript>
+
+</html>
